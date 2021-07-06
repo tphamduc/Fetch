@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Test</title>
+</head>
+
+<body>
+    <div id="app-container" style="margin-left: 17vw;">
+        <div id="getAllUser" style="display: flex;">
+            <h3>GET ALL USER </h3>
+            <button type="button" value="click" onclick='OutList()' style="height: 50px;margin-left: 20px;width: 70px;">GET</button>
+            <textarea id="t1" style="margin-left: 100px;width: 700px;height: 300px;border-radius: 5px;"></textarea>
+        </div>
+            
+        <div class="searchID">
+            <input type="text" id="bt1" value="" placeholder="ID">
+            <button onclick='SearchbyID()'>SEARCH</button>
+            <p id="t2"></p>
+        </div>
+        <div class="Create">
+            <input type="text" id="bt2" value="" placeholder="NAME">
+            <button onclick=Create()>CREATE</button>
+            <p id="t3"></p>
+        </div>
+        <div class="Update">
+            <input type="text" id="bt4" value="" placeholder="ID">
+            <input type="text" id="bt5" value="" placeholder="NAME">
+            <button onclick=Update()>UPDATE</button>
+            <p id="t5"></p>
+        </div>
+        <div class="Delete">
+            <input type="text" id="bt3" value="" placeholder="ID">
+            <button onclick=Delete()>DELETE</button>
+            <p id="t4"></p>
+        </div>
+    </div>
+        
+</body>
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+
+</html>
